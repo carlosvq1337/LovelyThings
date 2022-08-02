@@ -32,7 +32,7 @@ const LogoBox = styled.span`
     align-items: center;
     height: 60px;
     line-height: 20px;
-    padding: 10px;
+    padding: 0px;
     animation-duration: 8s;
     &:hover {
         animation: 0.75s ${jumpAnimation};
@@ -57,7 +57,7 @@ const Logo = () => {
                         fontWeight="bold"
                         ml={3}
                     >
-                        Amigurumis
+                        Lovely Things
                     </Text>
                 </LogoBox>
             </a>

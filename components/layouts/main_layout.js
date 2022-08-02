@@ -10,7 +10,7 @@ const MainLayout = ({ children, router }) => {
                     name="viewport"
                     content="width=device-width, initial-scale=1"
                 />
-                <title>Nombre - Tienda de Amigurumis</title>
+                <title>Lovely Things - Amigurumis y más</title>
             </Head>
 
             <Navbar path={router.asPath} />

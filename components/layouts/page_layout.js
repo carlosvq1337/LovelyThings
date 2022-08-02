@@ -19,7 +19,7 @@ const PageLayout = ({ children, title }) => (
         <>
             {title && (
                 <Head>
-                    <title>Mapp - {title}</title>
+                    <title>Lovely Things - {title}</title>
                 </Head>
             )}
             {children}

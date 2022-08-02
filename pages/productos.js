@@ -13,20 +13,23 @@ const Products = () => {
         <PageLayout>
         <Container>
             <Heading as="h3" fontSize={20} mb={4}>
-                Projects and Papers
+                Amigurumis
             </Heading>
             <SimpleGrid columns={[1,1,2]} gap={6}>
                 <Section delay={0.1}>
-                    <ProductGridItem id="web-dev-guide" title="Web Development Guide" thumbnail={img_chanclas}>
-                        Chanclas
+                    <ProductGridItem id="chanclas" title="Chanclas" thumbnail={img_chanclas}>
+                        1 000 USD
                     </ProductGridItem>
                 </Section>
                 <Section delay={0.2}>
-                    <ProductGridItem id="dockerized-mern" title="Dockerized MERN" thumbnail={img_chanclas2}>
-                        Chanclas 2
+                    <ProductGridItem id="chanclas2" title="Chanclas 2" thumbnail={img_chanclas2}>
+                        2 000 USD
                     </ProductGridItem>
                 </Section>
             </SimpleGrid>
+            <Heading as="h3" fontSize={20} mb={4}>
+                Otros
+            </Heading>
         </Container>
         </PageLayout>
     )
