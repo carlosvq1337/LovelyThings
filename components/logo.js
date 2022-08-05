@@ -57,7 +57,7 @@ const Logo = () => {
                         fontWeight="bold"
                         ml={3}
                     >
-                        Lovely Things
+                        Inicio
                     </Text>
                 </LogoBox>
             </a>

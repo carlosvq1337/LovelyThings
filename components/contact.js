@@ -14,12 +14,12 @@ import Paragraph from './paragraph'
 
 
 
-const ContactUs = props => {
+export const ContactUs = props => {
     return (
             <Container>
                 <Section delay={0.1}>
                     <Heading as="h3" variant="section-title">
-                        Haz tu pedido!
+                        Te gusta? Haz tu pedido! 😉
                         
                     </Heading>
                     <Paragraph>Por Whatsapp:</Paragraph>
@@ -61,4 +61,48 @@ const ContactUs = props => {
     )
 }
 
-export default ContactUs
+export const ContactInfo = props => {
+    return (
+            <Container>
+                <Section delay={0.1}>
+                    <Heading as="h3" variant="section-title">
+                        Contáctanos 
+                    </Heading>
+                    <Paragraph>Al Whatsapp...</Paragraph>
+                    <List>
+                    <ListItem>
+                            <Link
+                                href={'https://wa.me/50684237860'}
+                                target="_blank"
+                            >
+                                <Button
+                                    variant="ghost"
+                                    colorScheme="teal"
+                                    leftIcon={<Icon as={IoLogoWhatsapp} />}
+                                >
+                                    8423 7860
+                                </Button>
+                            </Link>
+                        </ListItem>
+                        </List>
+                        <Paragraph>...o a al Instagram!</Paragraph>
+                        <List>
+                        <ListItem>
+                            <Link
+                                href="https://www.instagram.com/LovelyThings/"
+                                target="_blank"
+                            >
+                                <Button
+                                    variant="ghost"
+                                    colorScheme="teal"
+                                    leftIcon={<Icon as={IoLogoInstagram} />}
+                                >
+                                    @LovelyThings
+                                </Button>
+                            </Link>
+                        </ListItem>
+                    </List>
+                    </Section>
+            </Container>
+    )
+}

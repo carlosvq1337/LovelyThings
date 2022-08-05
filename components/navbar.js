@@ -74,11 +74,9 @@ const Navbar = props => {
                         Productos
                     </LinkItem>
                     <LinkItem href="/info" path={path}>
-                        Información
+                        Información / FAQ
                     </LinkItem>
-                    <LinkItem href="/pedido" path={path}>
-                        Haz tu pedido
-                    </LinkItem>
+                    
                 </Stack>
                 <Box flex={1} align="right" marginTop={3}>
                     {/*<ThemeToggleButton />*/}
@@ -96,9 +94,6 @@ const Navbar = props => {
                                 </NextLink>
                                 <NextLink href="/info" passHref>
                                     <MenuItem as={Link}>Información</MenuItem>
-                                </NextLink>
-                                <NextLink href="/pedido" passHref>
-                                    <MenuItem as={Link}>Haz tu pedido</MenuItem>
                                 </NextLink>
                             </MenuList>
                         </Menu>

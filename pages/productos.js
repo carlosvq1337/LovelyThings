@@ -12,7 +12,7 @@ const Products = () => {
     return (
         <PageLayout>
         <Container>
-            <Heading as="h3" fontSize={20} mb={4}>
+            <Heading as="h3" variant="section-title" fontSize={20} mb={4}>
                 Amigurumis
             </Heading>
             <SimpleGrid columns={[1,1,2]} gap={6}>
@@ -27,7 +27,7 @@ const Products = () => {
                     </ProductGridItem>
                 </Section>
             </SimpleGrid>
-            <Heading as="h3" fontSize={20} mb={4}>
+            <Heading as="h3" variant="section-title" fontSize={20} mb={4}>
                 Otros
             </Heading>
         </Container>
