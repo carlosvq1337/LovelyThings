@@ -58,7 +58,7 @@ const Page = () => {
                     mb={6}
                     align="center"
                 >
-                    "Dios todo lo hizo hermoso en su tiempo"
+                    &ldquo;Dios todo lo hizo hermoso en su tiempo&rdquo;
                     <br></br>
                     Eclesiastés 3: 11a
                 </Box>
