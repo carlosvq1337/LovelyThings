@@ -2,7 +2,7 @@ import { Container, Heading, Link } from '@chakra-ui/react'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import NextLink from 'next/link'
-import { ContactInfo } from '../components/contact'
+import ContactInfo from '../components/contactInfo'
 import PageLayout from '../components/layouts/page_layout'
 
 const Info = () => {
@@ -36,7 +36,7 @@ const Info = () => {
             </Heading>
             <Section delay={0.5}>
                     <Paragraph>
-                        Lovely Things acepta transferencias por SINPE o pagos en efectivo. 💵
+                        Lovely Things únicamente acepta transferencias por SINPE. 💵
                     </Paragraph>
                 </Section>
         </Container>

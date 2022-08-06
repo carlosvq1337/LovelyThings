@@ -13,8 +13,10 @@ import { ChevronRightIcon } from '@chakra-ui/icons'
 import { ProductGridItem } from '../components/gridItem'
 import Section from '../components/section'
 import {
-    img_chanclas,
-    img_chanclas2
+    img_cacatua,
+    img_guacamaya,
+    img_hormigas,
+    img_ovejas
 } from '../public/products'
 
 const Page = () => {
@@ -56,19 +58,27 @@ const Page = () => {
                     mb={6}
                     align="center"
                 >
-                    Slogan
+                    "Dios todo lo hizo hermoso en su tiempo"
+                    <br></br>
+                    Eclesiastés 3: 11a
                 </Box>
 
 
 				<SimpleGrid columns={[1,1,2]} gap={6}>
                 <Section delay={0.1}>
-                    <ProductGridItem id="chanclas" title="Chanclas" thumbnail={img_chanclas}>
-                        1 000 USD
+                    <ProductGridItem id="hormigas" title="" thumbnail={img_hormigas}>
                     </ProductGridItem>
                 </Section>
                 <Section delay={0.2}>
-                    <ProductGridItem id="chanclas2" title="Chanclas 2" thumbnail={img_chanclas2}>
-                        2 000 USD
+                    <ProductGridItem id="guacamaya" title="" thumbnail={img_guacamaya}>
+                    </ProductGridItem>
+                </Section>
+                <Section delay={0.2}>
+                    <ProductGridItem id="cacatua" title="" thumbnail={img_cacatua}>
+                    </ProductGridItem>
+                </Section>
+                <Section delay={0.2}>
+                    <ProductGridItem id="ovejas" title="" thumbnail={img_ovejas}>
                     </ProductGridItem>
                 </Section>
             </SimpleGrid>

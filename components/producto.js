@@ -2,7 +2,8 @@ import NextLink from 'next/link'
 import { Heading, Box, Image} from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import { Container, Badge, Link} from '@chakra-ui/react'
-import ContactUs from './contact'
+import ContactProduct from './contactProduct'
+import Paragraph from './paragraph'
 
 const Title = ({ children }) => (
     <Box>
@@ -26,24 +27,40 @@ const ProductImage = ({src, alt}) => (
 )
 
 const Meta = ({children}) => (
-    <Badge colorScheme="green" mr={2}>
+    <Badge colorScheme="green" mr={1}>
         {children}
     </Badge>
 )
 
+const Size = ({children}) => (
+    <Badge colorScheme="yellow" mr={1} ml={1}>
+        {children}
+    </Badge>
+)
 
+const Price = ({children}) => (
+    <Badge colorScheme="purple" mr={1} ml={1}>
+        {children}
+    </Badge>
+)
 const Producto = props => {
     return (
             <Container>
                 <Title>
-                    {props.name} - <Meta>{props.status}</Meta><Badge>{props.price} CRC</Badge>
+                    {props.name} 
                 </Title>
                 <ProductImage
                     src={props.imgSrc}
                     alt={props.name}
                 />
-            
-                <ContactUs msg={props.waMsg}/>
+                
+                <Paragraph>{props.description}</Paragraph>
+
+                <Meta>{props.status}</Meta>
+                <Price>{props.price}</Price>
+                <Size>{props.size}</Size>
+
+                <ContactProduct msg={props.waMsg}/>
             </Container>
     )
 }
